@@ -1,9 +1,9 @@
 import java.io.Serializable;
 
 public class Human implements Serializable {
-    private String name;
-    private String sex;
-    private int age;
+    String name;
+    String sex;
+    int age;
 
     public Human(String name, String sex, int age){
         this.name = name;
@@ -11,7 +11,7 @@ public class Human implements Serializable {
         this.age = age;
     }
 
-    public String getName() {
+  /*  public String getName() {
         return name;
     }
 
@@ -21,7 +21,7 @@ public class Human implements Serializable {
 
     public int getAge() {
         return age;
-    }
+    }*/
 
     @Override
     public String toString() {

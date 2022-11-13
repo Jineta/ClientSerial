@@ -44,9 +44,10 @@ public class ClientSocket {
         try {
             ObjectOutputStream out = this.getOut();
             out.writeObject(human);
+            out.flush();
+            //out.close();
             System.out.println("object send to server");
             System.out.println(human.toString());
-            out.close();
         } catch (Exception ex) {
             System.out.println("Uuuups... Couldn't send it to server.");
         }
